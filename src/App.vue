@@ -20,11 +20,7 @@
 
       <textarea v-if="tab === 'dot'" readonly :value="dotText" class="h-full" wrap="off" />
 
-      <iframe
-          v-else-if="tab === 'svg'"
-          :srcdoc="svgText"
-          class="h-full w-full"
-          />
+      <iframe v-else-if="tab === 'svg'" :srcdoc="svgText" class="h-full w-full" />
     </div>
   </div>
 </template>
